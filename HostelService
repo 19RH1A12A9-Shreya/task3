@@ -1,0 +1,10 @@
+package com.motivity.services;
+import java.util.List;
+import com.motivity.entities.Hostel;
+public interface HostelService {
+   abstract void add(Hostel hostel);
+   abstract void delete(Hostel hostel);
+   abstract void update(Hostel hostel);
+   List<Hostel> select();
+}
+
