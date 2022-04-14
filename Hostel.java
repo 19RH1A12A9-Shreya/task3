@@ -46,19 +46,6 @@ class Fee extends Hostel{
 		 this.fee = fee;
 	}
 }
-/*
-public Hostel(int obj) {
-this.obj = obj;
-}/*
-public Hostel(String name) {
-this.name = name;
-}
-public Hostel(int rooms) {
-this.rooms = rooms;
-}
-public Hostel(int fee) {
-this.fee = fee;
-}*/
 public int getHouseNumber() {
 	return HouseNumber;
 }
