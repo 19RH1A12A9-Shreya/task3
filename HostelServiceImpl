@@ -1,0 +1,33 @@
+package com.motivity.services;
+import com.motivity.dao.HostelDao;
+import com.motivity.entities.Hostel;
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+@Service
+public class HostelServiceImpl implements HostelService {
+
+    @Autowired
+    public HostelDao hostelDao;
+    @Transactional
+  
+    public void add(Hostel hostel) {
+        hostelDao.add(hostel);
+    }
+    @Transactional
+    public void delete(Hostel hostel) {
+        hostelDao.delete(hostel);
+    }
+    @Transactional
+    public void update(Hostel hostel) {
+       hostelDao.update(hostel);
+    }
+    @Transactional
+	public List<Hostel> select(){
+		return hostelDao.select();
+	}
+ 
+}
+
+
